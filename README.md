@@ -2,7 +2,7 @@
 javascript popup message and other tags library
 
 ## how to use
-'''
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,4 +29,4 @@ javascript popup message and other tags library
 </script>
 </body>
 </html>
-'''
+```
