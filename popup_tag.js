@@ -21,7 +21,8 @@ function popup_tag($tag, event) {
     .show();
   $('body').unbind();
   $('body').click(function(e) {
-    if (e.target!==event.target && (e.timeStamp-event.timeStamp)>200) {
+    if (event && 
+        e.target!==event.target && (e.timeStamp-event.timeStamp)>200) {
       popup_remove(e);
     }
   });  
