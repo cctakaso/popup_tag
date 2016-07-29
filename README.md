@@ -10,8 +10,6 @@ javascript popup message and other tags library
 <link rel="stylesheet" href="css/jquery-ui.min.css">
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/popup_tag.js"></script>
-
-</style>
 </head>
 <body>
 
