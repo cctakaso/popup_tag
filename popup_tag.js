@@ -9,6 +9,7 @@ function popup_tag($tag, event) {
   var $popup = $('<div>')
     .hide()
     .addClass('popup')
+    .css({"position": "fixed"})
     .appendTo("body");
   $tag.appendTo($popup);
   var left,top;
