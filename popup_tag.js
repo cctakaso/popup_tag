@@ -21,11 +21,14 @@ function popup_tag($tag, event) {
     .show();
   $('body').unbind();
   $('body').click(function(e) {
-    if (event && 
-        e.target!==event.target && (e.timeStamp-event.timeStamp)>200) {
-      popup_remove(e);
+    if (event) {
+      if (e.target!==event.target && (e.timeStamp-event.timeStamp)>200) {
+        popup_remove(e);
+      }
+    }else{
+      popup_remove(e);      
     }
-  });  
+  }); 
   $("div.popup").unbind();
   $("div.popup").click(function(e) {
     popup_remove(e);
