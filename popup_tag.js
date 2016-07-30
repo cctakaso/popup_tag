@@ -47,3 +47,19 @@ function popup_remove(e) {
   }
   return false;
 }
+
+$.fn.getHeight = function() {
+  var height = this.css('height');
+  if (isValid(height)) {
+    return +height.replace('px','');
+  }
+  return this.height();
+}
+$.fn.getWidth = function() {
+  var width = this.css('width');
+  if (isValid(width)) {
+    return +width.replace('px','');
+  }
+  return this.width();
+}
+
